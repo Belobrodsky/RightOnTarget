@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     var number:Int=0
     
 // round
-    var round:Int=0
+    var round:Int=1
     
      //сумма очков
     var points: Int=0;
@@ -30,21 +30,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.number = Int.random(in: 1...50)
+        self.label.text = String(self.number)
     }
 
 
     @IBAction func checkNumber(_ sender: Any) {
      
-        if self.round==0{
-            
-            self.number = Int.random(in: 1...50)
-            self.label.text = String(self.number)
-            self.round=1
-            
-            
-        }
-        else
-        {
+
             let numSlider = Int(self.slider.value.rounded())
             
             switch self.number {
@@ -85,7 +79,7 @@ class ViewController: UIViewController {
             self.label.text = String(self.number)
             
             
-        }
+        
     
         
         
