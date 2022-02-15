@@ -127,6 +127,9 @@ class ViewController: UIViewController {
 
     ///when button pressed
     ///my test comments for git learnin
+    ///my test comments for git learning
+    ///
+    ///something new comment for git merge
     @IBAction func showAbout(_ sender: Any) {
        
         
