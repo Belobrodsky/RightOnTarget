@@ -123,7 +123,12 @@ class ViewController: UIViewController {
         
     }//checkNumber
     
+    
+    ///when button pressed
+    ///my test comments for git learning
     @IBAction func showAbout(_ sender: Any) {
+       
+        
         
        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
