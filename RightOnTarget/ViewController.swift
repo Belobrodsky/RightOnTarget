@@ -123,23 +123,45 @@ class ViewController: UIViewController {
         
     }//checkNumber
     
+    /*
+    //MARK: Ленивое свойство
     
+     создали специально  свойство, чтобы объект не погибал при вызове функции   dismiss, а оставался храниться в памяти, чтобы хоть одна ссылка на него указывала
+     
+     lazy -  ленивое, чтобы не засорять оперативную память, вдруг пользователь о программе вообще никогда не нажмет
+     
+     если бы данного свойства не было бы и все созадавалось бы в методе ШоуАбоут,
+     то форма создавалаь бы каждый раз и мы видели бы в консоле
+     loadView
+     viewDidLoad
+     viewWillApper
+     viewDidAppear
+     
+     
+     во вторых данный код не будет работать без слова лейзи, так как не создан акземпляр
+     */
+    
+    lazy var secondViewController: SecondViewController = getSecondViewController()
+    
+    private func getSecondViewController() -> SecondViewController
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
+        return viewController as! SecondViewController
+        
+        
+    }
     ///when button pressed
     ///my test comments for git learning
     ///
     ///something new comment for git merge
     @IBAction func showAbout(_ sender: Any) {
-       
         
-        
-       let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
-        
-        
-        
-        
-        self.present(viewController, animated: true, completion: nil)
+        self.present(secondViewController, animated: true, completion: nil)
     }
+    
+    
+    
     
     
     
