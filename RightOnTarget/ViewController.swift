@@ -157,7 +157,12 @@ class ViewController: UIViewController {
     ///something new comment for git merge
     @IBAction func showAbout(_ sender: Any) {
         
-        self.present(secondViewController, animated: true, completion: nil)
+        
+        // все три варианта являются рабочими
+        
+        //self.present(secondViewController, animated: true, completion: nil)
+        //self.show(secondViewController, sender: nil)
+        self.show(secondViewController, sender: self)
     }
     
     
