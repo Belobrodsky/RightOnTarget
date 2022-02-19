@@ -141,29 +141,29 @@ class ViewController: UIViewController {
      во вторых данный код не будет работать без слова лейзи, так как не создан акземпляр
      */
     
-    lazy var secondViewController: SecondViewController = getSecondViewController()
-    
-    private func getSecondViewController() -> SecondViewController
-    {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
-        return viewController as! SecondViewController
-        
-        
-    }
+//    lazy var secondViewController: SecondViewController = getSecondViewController()
+//    
+//    private func getSecondViewController() -> SecondViewController
+//    {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
+//        return viewController as! SecondViewController
+//        
+//        
+//    }
     ///when button pressed
     ///my test comments for git learning
     ///
     ///something new comment for git merge
-    @IBAction func showAbout(_ sender: Any) {
-        
-        
-        // все три варианта являются рабочими
-        
-        //self.present(secondViewController, animated: true, completion: nil)
-        //self.show(secondViewController, sender: nil)
-        self.show(secondViewController, sender: self)
-    }
+//    @IBAction func showAbout(_ sender: Any) {
+//
+//
+//        // все три варианта являются рабочими
+//
+//        //self.present(secondViewController, animated: true, completion: nil)
+//        //self.show(secondViewController, sender: nil)
+//        self.show(secondViewController, sender: self)
+//    }
     
     
     
