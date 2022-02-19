@@ -40,11 +40,11 @@ class SecondViewController: UIViewController {
     }
     
     
-    @IBAction func hideCurrentScene(_ sender: Any) {
-        
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+//    @IBAction func hideCurrentScene(_ sender: Any) {
+//        
+//        self.dismiss(animated: true, completion: nil)
+//    }
+
 
     /*
     // MARK: - Navigation

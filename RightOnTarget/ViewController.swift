@@ -95,29 +95,29 @@ class ViewController: UIViewController {
             
             
             
-            if self.round == 5
-            {
-                let alert = UIAlertController(title: "Игра окончена", message:  "Вы заработали \(self.points) очков", preferredStyle: .alert)
-                
-                alert.addAction(UIAlertAction(title: "Начать заново", style: UIAlertAction.Style.default,handler: nil))
-                self.present(alert, animated: true) {
-                    //
-                }
-                
-                self.round=1
-                self.points=0
-                
-                self.slider.value = 25
-                
+        if self.round == 5
+        {
+            let alert = UIAlertController(title: "Игра окончена", message:  "Вы заработали \(self.points) очков", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Начать заново", style: UIAlertAction.Style.default,handler: nil))
+            self.present(alert, animated: true) {
+                //
             }
-            else {self.round+=1}
             
-            self.number = Int.random(in: 1...50)
-            self.label.text = String(self.number)
+            self.round=1
+            self.points=0
             
+            self.slider.value = 25
             
+        }
+        else {self.round+=1}
         
-    
+        self.number = Int.random(in: 1...50)
+        self.label.text = String(self.number)
+        
+        
+        
+        
         
         
         
@@ -130,20 +130,9 @@ class ViewController: UIViewController {
     ///my test comments for git learning
     ///
     ///something new comment for git merge
-    @IBAction func showAbout(_ sender: Any) {
-       
-        
-        
-       let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
-        
-        
-        
-        
-        self.present(viewController, animated: true, completion: nil)
-    }
-    
-    
-    
+//    @IBAction func showAbout(_ sender: Any) {
+//       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")self.present(viewController, animated: true, completion: nil)
+//    }
 }
 
