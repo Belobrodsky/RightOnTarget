@@ -39,11 +39,11 @@ class SecondViewController: UIViewController {
         print("viewDidDisappear SecondViewController")
     }
     
-    
-//    @IBAction func hideCurrentScene(_ sender: Any) {
-//        
-//        self.dismiss(animated: true, completion: nil)
-//    }
+    // MARK: - MyNavigation- hide_scene
+    @IBAction func hideCurrentScene(_ sender: Any) {
+        //так как класс UIViewController имеет такие встроенные методы
+        self.dismiss(animated: true, completion: nil)
+    }
 
 
     /*

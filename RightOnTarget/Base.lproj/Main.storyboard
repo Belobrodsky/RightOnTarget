@@ -118,7 +118,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=" Назад"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="AIG-vc-xxT"/>
+                                    <action selector="hideCurrentScene:" destination="yzs-Ha-1ad" eventType="touchUpInside" id="Glb-yC-Ayf"/>
                                 </connections>
                             </button>
                         </subviews>

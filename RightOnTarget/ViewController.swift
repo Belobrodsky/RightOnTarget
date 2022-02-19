@@ -124,6 +124,17 @@ class ViewController: UIViewController {
     }//checkNumber
     
     
+    /*
+    //MARK: - Navigation via segue
+    
+     при добавленими сигвея для простого перехода между сценами путем зажатия клавиши контрол в файле майнсториборд добавляются строки
+     +                                <connections>
+     +                                    <segue destination="yzs-Ha-1ad" kind="show" id="gS5-S9-0Wl"/>
+     +                                </connections>
+     
+     переход осуществляется прямой и обратный без удаления предыдущей сцены из памяти и каждый раз заново создается ее копия. Для какой цели это было создано не понятно
+    
+    */
 
     ///when button pressed
     ///my test comments for git learnin
