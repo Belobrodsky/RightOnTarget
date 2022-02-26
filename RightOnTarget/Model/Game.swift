@@ -36,8 +36,6 @@ class Game: GameProtocol
         self.maxSecretValue = endValue
         self.lastRound = rounds
         self.currentSecretValue = self.getSecretValue()
-        
-        
     }
     
     func getSecretValue() -> Int

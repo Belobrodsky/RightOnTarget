@@ -165,10 +165,5 @@ class ViewController: UIViewController {
         self.show(secondViewController, sender: self)
     }
     
-    
-    
-    
-    
-    
 }
 
